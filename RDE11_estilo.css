@@ -72,4 +72,23 @@ p::first-letter{
     color:red;
     font-size: xx-large;
 }
+.links:hover{
+    color: salmon;
+    background-color: seagreen;
+    margin: 30px;
+    padding: 20px;
+}
+.links1:active{
+    color: salmon;
+    background-color: seagreen;
+    margin: 30px;
+    padding: 20px;
+}
+.links2:active{
+    color: salmon;
+    background-color: seagreen;
+    margin: 30px;
+    padding: 20px;
+}
+
 
