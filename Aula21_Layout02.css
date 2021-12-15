@@ -34,13 +34,24 @@ header{
 }
 .conteudo{
     float:left;
-    margin: 15px 2px 25px 2px;
+    padding: 14px;
+}
+.conteudo.lateral{
+    width: 20%;
+    margin: 10px 2px 25px 2px;
     background-color: gainsboro;
-    width: 30.5%;
-    text-align: justify;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 10px 10px 10px #08101a98;
+
+
+}
+.conteudo.central{
+    width: 52px;
+    height: 282px;
+    margin: 10px 2px 2px 2px;
+    background-color: gainsboro;
+}
+.principal h2{
+    color: #2e4159;
+
 }
 .rodape{
     color:darkgray;
@@ -50,8 +61,8 @@ header{
 
 }
 @media screen and (max-widht:800px){
-.principal, .conteudo{
-    width: 100px;
-    padding:0px;
-}
-}
+    .principal, .conteudo.central, .conteudo.lateral{
+        width: 100px;
+        padding:0px;
+    }
+    }
