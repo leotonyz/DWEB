@@ -15,4 +15,4 @@ for (let i=0;i<v.lenght;i++){
 }
 
 
-console.log[menor]
+alert[menor]
