@@ -1,15 +1,18 @@
-function Fibonacci(valor){
-	var anterior = 0;
-	var atual = 1;
-	var proximo = 1;
+var a=0, b=0, c, d, i, v=[]
 
-	for(let i = 0; i < valor; i++){
-		console.log(proximo)
-		anterior = atual + proximo;
-		atual = proximo
-		proximo = anterior
+c=prompt("Digite o número correspondente ao valor da sequência de fibonacci que você deseja: ")
+
+	for(i=0;i<parseFloat(c); i++){
+		if(i==1){
+			a=1;
+		}
+		d=a+b;
+		b=a
+		a=d
+		v[i]=d
+		
 	}
-}
+	alert(v)
 
-Fibonacci(100);
+
 
