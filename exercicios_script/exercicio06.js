@@ -1,18 +1,19 @@
-var v = [12, 5, 26, 23, 14]
-var menor = v[0]
-var maior = v[0]
-var i
+var maior, menor, i, a
 
-                        
-
-
-
-
-for (let i=0;i<v.lenght;i++){
-    if(menor>v[i]){
-        menor=v[i]
+for(i=0;i<5;i++){
+    a=prompt("Insira um valor: ")
+    if (i==0){
+        maior=a
+        menor=a
+    }
+    else{
+        if(a<menor){
+            menor=a
+        }
+        if(a>maior){
+            maior=a
+        }
     }
 }
 
-
-alert[menor]
+alert("O maior valor inserido é "+maior+" o menor valor inserido é: "+menor)
