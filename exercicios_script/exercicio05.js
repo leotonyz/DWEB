@@ -1,18 +1,17 @@
-var pt, r, termos, num, cont
-pt=0.0
-r=0.0
+var a, b, termos, num, cont
+a=0.0
+b=0.0
 termos=0.0
 num=0.0
 cont=0.0
-pt=prompt("Primeiro termo: ")
-r=prompt("Razão da PG: ")
-termos=prompt("Quantidade de termos: ")
-document.write("Progressão geométrica:   ")
-document.write(pt+"  ")
+a=prompt("Digite o valor do primeiro termo: ")
+b=prompt("Digite a razão da PG: ")
+termos=prompt("Digite a quantidade de termos: ")
+document.write("A progressão geométrica é :   ")
+document.write(a+"  ")
 while (cont<termos-1) {
-    num =parseInt(pt)*parseInt(r)
-    pt=num
-    //alert(num)
+    num =parseInt(a)*parseInt(b)
+    a=num
     document.write(num+"  ")
     cont++
 }
