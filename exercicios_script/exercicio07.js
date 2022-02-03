@@ -1,63 +1,32 @@
-var a, b, c, d, e
+var idade=[], sexo=[], cont=0.0, f=0.0, m=0.0, maior=0.0, menor=0.0
 
-var f, g, h, i, j
-
-
-
-var feminino=0, masculino=0
-
-var soma=0, some=0
-
-alert("Digite 1 para sexo feminino, digite 2 para sexo masculino")
-
-
-a=prompt("Digite o sexo da primeira pessoa: ")
-b=prompt("Digite o sexo da segunda pessoa: ")
-c=prompt("Digite o sexo da terceira pessoa: ")
-d=prompt("Digite o sexo da quarta pessoa: ")
-e=prompt("Digite o sexo da quinta pessoa: ")
-
-
-
-if(a=1){
-    feminino+1
+while(cont<5){
+    idade[cont]=prompt(cont+ " - Digite a idade: ")
+    cont++
 }
-
-if(b=1){
-    feminino+1
+cont=0.0
+while(cont<5){
+    sexo[cont]=prompt(cont+ " - Digite o sexo ( F para feminino, M para masculino): ")
+    cont++
 }
-
-if(c=1){
-    feminino+1
+cont=0.0
+while (cont<5) {
+    if (sexo[cont]=='F') {
+        f++
+    }
+    else if (sexo[cont]=='M') {
+        m++
+    }
 }
-
-if (d=1){
-    feminino+1
+document.write("Pessoas por sexo\nFeminino: "+f+"\nMaculino: "+m)
+cont=0.0
+while (cont<5) {
+    if (idade[cont]>=18){
+        maior++
+    }
+    else if (idade[cont]<18) {
+        menor++
+    }
 }
-
-if (e=1){
-    feminino+1
-}
-
-if(a=2){
-    masculino=some+1
-}
-
-if(b=2){
-    masculino=some+1
-}
-
-if(c=2){
-    masculino=some+1
-}
-
-if (d=2){
-    masculino=some+1
-}
-
-if (e=2){
-    masculino=some+1
-}
-
-alert(feminino)
-alert(masculino)
+document.write("Pessoas por idade\nMaior de idade: "+maior+"\nMenor de idade: "+menor)
+cont=0.0

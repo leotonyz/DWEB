@@ -16,4 +16,4 @@ for(i=0;i<5;i++){
     }
 }
 
-alert("O maior valor inserido é "+maior+" o menor valor inserido é: "+menor)
+alert("O maior valor inserido é: "+maior+" o menor valor inserido é: "+menor)
