@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários HTML</title>
+    <link rel="stylesheet" href="exercicio13.css">
+    <script type="text/javascript" src="exercicio13.js"></script>
 </head>
 <body>
     <h1>Formulários HTML</h1>
@@ -12,14 +14,19 @@
         Podem ser de vários tipos: texto, email, radiobutton, checkboxes, botões dentre outros.
     </p>
 
-    <form>
-        <label for="nome">Nome Completo </label>
+    <form name="formulario" action="cadastra.php" method="post" onsubmit=" return Enviar()">
+        <label for="nome">Nome Completo </label><br>
         <input type="text" id="nome" placeholder="Digite seu nome"/>
+        <label for="email" id="email">Email</label><br>
+        <input type="email" placeholder="email@email.com"> <br><br>
+        <label for="datanasc">Data de nascimento</label><br>
+        <input type="date" id="datanasc"><br><br>
+        <textarea id="comentário" placeholder="Deixe o seu comentário"></textarea>
         <input type="radio" id="solteiro" value="solteiro"/>
         <label for="solteiro">Solteiro</label>
         <input type="radio" id="Casado" value="casado"/>
         <label for="casado">Casado</label>
-        <p><input type="button" value="Enviar"></p>
+        <p><input type="submit" class="Enviar" value="Enviar" ></p>
     </form>
 </body>
 </html>

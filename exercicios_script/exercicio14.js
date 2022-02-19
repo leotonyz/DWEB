@@ -5,5 +5,5 @@ function somar(){
     n2= parseFloat(document.getElementById("n2").value)
     resultado=n1+n2
 
-    document.getElementsById("resultado").innerHTML = `O resultado da soma é  ${res}`
+    document.getElementsById("resultado").innerHTML = `O resultado da soma é  ${resultado}`
 }
