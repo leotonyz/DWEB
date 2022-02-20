@@ -15,17 +15,13 @@
     </p>
 
     <form name="formulario" action="cadastra.php" method="post" onsubmit=" return Enviar()">
-        <label for="nome">Nome Completo </label><br>
+        <label for="nome">Nome Completo</label><br>
         <input type="text" id="nome" placeholder="Digite seu nome"/>
-        <label for="email" id="email">Email</label><br>
-        <input type="email" placeholder="email@email.com"> <br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" placeholder="email@email.com"> <br><br>
         <label for="datanasc">Data de nascimento</label><br>
         <input type="date" id="datanasc"><br><br>
         <textarea id="comentário" placeholder="Deixe o seu comentário"></textarea>
-        <input type="radio" id="solteiro" value="solteiro"/>
-        <label for="solteiro">Solteiro</label>
-        <input type="radio" id="Casado" value="casado"/>
-        <label for="casado">Casado</label>
         <p><input type="submit" class="Enviar" value="Enviar" ></p>
     </form>
 </body>

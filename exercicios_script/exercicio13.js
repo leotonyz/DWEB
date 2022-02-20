@@ -3,11 +3,10 @@ function Enviar(){
     var email=document.getElementsById("email")
     var ok
 
-    if (nome.value!="" &&nome.value.indexOf(" ")!=-1){
+    if (nome.value!="" && nome.value.indexOf(" ")!=-1){
         if(email.value.indexOf("@")!=-1){
             alert(nome.value+" agradecemos seu contato")
             ok=true
-
         }
         else{
             alert("Digite um email válido")
@@ -20,4 +19,5 @@ function Enviar(){
         alert("Preencha o seu nome completo")
         ok=false
     }
+    return ok
 }
